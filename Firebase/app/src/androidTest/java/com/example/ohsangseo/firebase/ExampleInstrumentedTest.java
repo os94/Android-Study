@@ -1,4 +1,4 @@
-package com.example.q.week5;
+package com.example.ohsangseo.firebase;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.example.q.week5", appContext.getPackageName());
+        assertEquals("com.example.ohsangseo.firebase", appContext.getPackageName());
     }
 }

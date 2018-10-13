@@ -1,4 +1,4 @@
-package com.example.q.week5;
+package com.example.ohsangseo.firebase;
 
 import org.junit.Test;
 
