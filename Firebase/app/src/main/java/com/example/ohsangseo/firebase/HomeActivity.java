@@ -12,22 +12,26 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        findViewById(R.id.upload).setOnClickListener(this);
-        findViewById(R.id.download).setOnClickListener(this);
+        findViewById(R.id.updown).setOnClickListener(this);
+        findViewById(R.id.updown2).setOnClickListener(this);
         findViewById(R.id.info).setOnClickListener(this);
+        findViewById(R.id.img).setOnClickListener(this);
     }
 
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
-            case R.id.upload:
-                startActivity(new Intent(getBaseContext(), UploadActivity.class));
+            case R.id.updown:
+                startActivity(new Intent(getBaseContext(), UpDownLoadActivity.class));
                 break;
-            case R.id.download:
-                startActivity(new Intent(getBaseContext(), DownloadActivity.class));
+            case R.id.updown2:
+                startActivity(new Intent(getBaseContext(), UpDownLoad2Activity.class));
                 break;
             case R.id.info:
                 startActivity(new Intent(getBaseContext(), InfoActivity.class));
+                break;
+            case R.id.img:
+                startActivity(new Intent(getBaseContext(), ImageUpDownActivity.class));
                 break;
         }
     }
