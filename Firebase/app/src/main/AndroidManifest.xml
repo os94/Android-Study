@@ -24,7 +24,9 @@
         <activity android:name=".InfoActivity" />
         <activity android:name=".UpDownLoadActivity" />
         <activity android:name=".UpDownLoad2Activity" />
-        <activity android:name=".ImageUpDownActivity"></activity>
+        <activity android:name=".ImageUpDownActivity" />
+        <activity android:name=".DocBoardActivity" />
+        <activity android:name=".WritePageActivity"></activity>
     </application>
 
 </manifest>

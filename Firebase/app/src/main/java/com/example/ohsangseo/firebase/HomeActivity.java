@@ -16,6 +16,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.updown2).setOnClickListener(this);
         findViewById(R.id.info).setOnClickListener(this);
         findViewById(R.id.img).setOnClickListener(this);
+        findViewById(R.id.doc).setOnClickListener(this);
     }
 
     @Override
@@ -32,6 +33,9 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.img:
                 startActivity(new Intent(getBaseContext(), ImageUpDownActivity.class));
+                break;
+            case R.id.doc:
+                startActivity(new Intent(getBaseContext(), DocBoardActivity.class));
                 break;
         }
     }

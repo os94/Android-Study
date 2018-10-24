@@ -46,6 +46,13 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
                 android:textSize="36sp" />
+            <TextView
+                android:id="@+id/doc"
+                android:text="Doc Board"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:textSize="36sp" />
 
         </LinearLayout>
     </ScrollView>
