@@ -2,11 +2,9 @@
 <resources>
 
     <string-array name="category">
-        <item>전체</item>
-        <item>공지</item>
-        <item>수업자료</item>
-        <item>QA</item>
-        <item>기타</item>
+        <item>category1</item>
+        <item>category2</item>
+        <item>category3</item>
     </string-array>
 
 </resources>

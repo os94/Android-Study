@@ -17,6 +17,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.info).setOnClickListener(this);
         findViewById(R.id.img).setOnClickListener(this);
         findViewById(R.id.doc).setOnClickListener(this);
+        findViewById(R.id.logout).setOnClickListener(this);
     }
 
     @Override
@@ -36,6 +37,9 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.doc:
                 startActivity(new Intent(getBaseContext(), DocBoardActivity.class));
+                break;
+            case R.id.logout:
+                startActivity(new Intent(getBaseContext(), LogoutActivity.class));
                 break;
         }
     }

@@ -35,8 +35,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.sign_in_button).setOnClickListener(this);
         findViewById(R.id.sign_out_button).setOnClickListener(this);
 
-        findViewById(R.id.title).setOnClickListener(this);
-
         // Configure sign-in to request the user's ID, email address, and basic
         // profile. ID and basic profile are included in DEFAULT_SIGN_IN.
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
@@ -66,9 +64,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.sign_out_button:
                 signOut();
-                break;
-            case R.id.title:
-                startActivity(new Intent(getBaseContext(), HomeActivity.class));
                 break;
         }
     }
@@ -139,10 +134,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if(account != null) {
             findViewById(R.id.sign_in_button).setVisibility(View.GONE);
             findViewById(R.id.sign_out_button).setVisibility(View.VISIBLE);
+
+            goHome();
         } else {
             findViewById(R.id.sign_in_button).setVisibility(View.VISIBLE);
             findViewById(R.id.sign_out_button).setVisibility(View.GONE);
         }
+    }
+
+    private void goHome() {
+        startActivity(new Intent(this, HomeActivity.class));
+        finish();
     }
 
 }

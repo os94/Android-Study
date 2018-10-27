@@ -26,7 +26,8 @@
         <activity android:name=".UpDownLoad2Activity" />
         <activity android:name=".ImageUpDownActivity" />
         <activity android:name=".DocBoardActivity" />
-        <activity android:name=".WritePageActivity"></activity>
+        <activity android:name=".WritePageActivity" />
+        <activity android:name=".LogoutActivity"></activity>
     </application>
 
 </manifest>
